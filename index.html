@@ -1,0 +1,50 @@
+<!-- we can write css in two ways internal(inside html) and external
+internal css are given more priority than external -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css"/> 
+</head>
+<body>
+    <h1 id="First">hello world1</h1>
+    <h1 id="Second">hello world2</h1>
+    <h1 class="my-color">hello world3</h1>
+    <h1 class="my-color">hello world4</h1> 
+    <!-- id will be given first priority than class in css even if class is latest -->
+    <button>Click here</button>
+    <!-- <div> 
+        <p>This is my paragraph</p>             lorem50 gives 50 random words for paragragh
+        <h1>This is my heading</h1>
+    </div> -->
+    <ul id="first-ul">
+        <li class="first-li">i am one point</li>
+    </ul>
+    <!-- in list also we can use id and class to specify the design -->
+     <!-- in  case of writing of 2 id's the priority will be given to latest(last) because the code will be read from bottom -->
+      <!-- in case of more specificty it gives more prior for more specificty -->
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <div id="empty-div">hello</div><!-- div is block element that will occupy entire block of width --> 
+        <span id="empty-span">hello</span> <!-- span is in line element which occupies neccesaray text --> <!-- these two differences u can see in website -->
+    </div>
+    <section class="my-section">
+        <div id="third-div">hello world1</div>
+       <div id="third-div">hello world2</div>
+    </section>
+     <div id="second-div">hello world3</div><!-- this is flex -->
+    <div id="second-div">hello world4</div>
+
+    <section class="my-position">
+        <div id="my-position-div">I am position</div>
+    </section>
+     <a href="#" id="link">blink</a>
+</body>
+</html>
